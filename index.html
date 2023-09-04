@@ -1,104 +1,141 @@
 <!DOCTYPE html>
-<html lang='es'>
+<html lang="es">
 	<head>
 		<title>A.Studio</title>
-		<meta name='title' content='A.Studio'>
+		<meta name="title" content="A.Studio">
 		<meta charset="utf-8">
-		<meta name='viewport' content='width=device-width,initial-scale=1,maximum-scale=1'>
-		<meta name='keywords' content='Aj.Studio'>
-		<meta name='description' content='A.Studio'>
+		<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+		<meta name="keywords" content="Aj.Studio">
+		<meta name="description" content="A.Studio">
 		<link rel="icon" href="./res/LogoAjayuStudio.jpg">
-	<style type="text/css">
-		body {background-color: #000000;}
-		.menu1>nav>img {background-color:#f43837; filter: blur(1px);}
-		main {text-align:center;}
-		footer {text-align:center;}
-
-		/*Smartphone*/
-		body {margin:0px; color:#feb8ba;}
-		.menu1 {position:relative; top:0px; left:0px; box-sizing:content-box; margin:0px; padding:0px; width:100%; }
-		.menu1>nav {box-sizing:content-box; margin:0px; padding:0px; display:flex; flex-direction:column; align-items:center; }
-		.menu1>nav>a {box-sizing:content-box; align-items: center; padding:0px; display:flex; justify-content:center; width:100%; height:50px; background-color:#f43837; color:#feb8ba; font:18px 'arial'; text-decoration:none; transition:all 0.4s; border: 1px solid white;}
-		.menu1>nav>a:hover {background-color:navy; color:gold;}
-		span {display:inline-block; width: 100%; overflow-x: auto;}
-		.menu1>nav>img {width:150px;}
-
-		/*Tablet*/
-		@media screen and (min-width: 500px)
-		{
-			.menu1>nav {flex-direction:column; align-items: center;}
-			.menu1>nav>a {background-color:#f43837; color:#feb8ba; border: 2px solid white;}
-			span {display:inline-block; width: 100%; overflow-x: auto;}
+		<NOlink href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+		<style type="text/css">
+			body {background-color: #ffffff;}
+			.menu1>nav>img {background-color:#f43837; filter: blur(1px);}
+			main {text-align: center;}
+			footer {text-align:center;}
+			span {display:inline-block; width: 100%; overflow-x: auto; border-style:dashed solid; border-color:#f43837; border-width:5px; background-color:black; color:#feb8ba; padding-bottom:7px;}
+			span>h3 {color:#f43837;}
+			span>img {border-style:hidden; border-radius:15px;}
+			.portada {height: 270px; overflow: hidden; margin: 0px; position: relative;}
+			.portada>img {position:absolute; left: 0px; top: 170px; bottom: 100%; margin: auto; min-height: 100%; min-width: 100%;}
+			.portada>h1 {position: absolute; bottom: 100px; left:10px; color:#f43837; -webkit-text-stroke: 1px #feb8ba; font-size:70px;}
+			.portada>h2 {position: absolute; bottom: 0px; left:10px; color:#f43837; -webkit-text-stroke: 1px #feb8ba; font-size:60px; text-shadow: none;}
+			hr {height:5px; background-color:#f43837;}
+			#servicios {background-color:#E9B5B6;}
+			#trabajos {background-color:#E9E8B0;}
+			#galeriaImagenes {background-color:#A9E5AF;}
+			#galeriaVideos {background-color:#B2B5F4;}
+			#clientes {background-color:#B1E8E1;}
+			#noticias {background-color:#E5E8B1;}
+			#contacto {background-color:#E3B3A0;}
+			footer {background-color:#feb8ba;}
+			div>h2 {font-family:"Liberation Serif"; font-weight:bolder; font-variant: small-caps; text-decoration: underline; text-shadow: 6px 3px 4px #f43837;}
+	
+			/*Smartphone*/
+			body {margin:0px; color:#000000;}
+			.menu1 {position:relative; top:0px; left:0px; box-sizing:content-box; margin:0px; padding:0px; width:100%; }
+			.menu1>nav {box-sizing:content-box; margin:0px; padding:0px; display:flex; flex-direction:column; align-items:center;}
+			.menu1>nav>a {box-sizing:content-box; align-items: center; padding:0px; display:flex; justify-content:center; width:100%; height:50px; background-color:#f43837; color:#feb8ba; font:18px 'arial'; text-decoration:none; transition:all 0.4s; border: 1px solid white;}
+			.menu1>nav>a:hover {background-color:#f43837; color:white;}
 			.menu1>nav>img {width:150px;}
-		}
-
-		/*Escritorio*/
-		@media screen and (min-width: 900px)
-		{
-			.menu1>nav {margin:0px 70px; border-radius: 0px 0px 15px 15px; overflow:hidden; flex-direction:row;}
-			.menu1>nav>a {background-color:#f43837; color:#feb8ba; border: 0px;}
-			span {display:inline-block; width: 30%; overflow-x: auto;}
-			.menu1>nav>img {width:50px;}
-		}
-	</style>
+	
+			/*Tablet*/
+			@media screen and (min-width: 500px)
+			{
+				.menu1>nav {flex-direction:column; align-items: center; background-color:#000000;}
+				.menu1>nav>a {background-color:#f43837; color:#feb8ba; border: 2px solid white;}
+				
+				.menu1>nav>img {width:150px;}
+			}
+	
+			/*Escritorio*/
+			@media screen and (min-width: 900px)
+			{
+				.menu1>nav {margin:0px 70px; border-radius: 0px 0px 15px 15px; overflow:hidden; flex-direction:row; text-align: center;}
+				.menu1>nav>a {background-color:#feb8ba; color:#000000; border: 0px;}
+				span {width: 31%;}
+				.menu1>nav>img {width:50px;}
+			}
+		</style>
 	</head>
-
 <body>
 	<header class="menu1">
 		<nav>
 			<img src="./res/LogoAjayuStudio.jpg" id="top"/>
-			<a href="#noticias">Noticias</a>
+			<a href="#servicios">Servicios</a>
 			<a href="#trabajos">Trabajos</a>
-			<a href="#galeria">Galeria de Imagenes</a>
+			<a href="#galeriaImagenes">Galeria de Imagenes</a>
+			<a href="#galeriaVideos">Galeria de Videos</a>
 			<a href="#clientes">Clientes</a>
+			<a href="#noticias">Noticias</a>
 			<a href="#contacto">Contacto</a>
 		</nav>
 	</header>
-	<main><p><h1>A.Studio</h1>
-		<h2>Soluciones Audiovisuales a sus necesidades</h2></p>
-		<p></p><hr>
-		<div id="noticias">
-			<h2>NOTICIAS</h2>
-			<span><h3>A.Studio inaugura su sitio web</h3>La pagina de A.Studio ha iniciado sus operaciones como parte de su propuesta por obtener visibilidad y Dar a conocer sus habilidades y proyecto realizados.</span>
-			<span><h3>Se entrega el 4to trabajo del 2023</h3>En Agosto de 2023 A.Studio ha completa la realización de su 4to proyecto en conjunto con Cinemateca de Bolivia. Un proyecto en conjunto sobre la perdida de los recursos naturales y el efecto económico en los pobladores de las regiones aledañas.</span>
-			<span><h3>Comienza la preproducción de nuestro 5to trabajo</h3>Para Septiembre de 2023 se tiene previsto el inicio de la preproducción del 5to proyecto de la gestión 2023, se realizaran las filmaciones en locacion.</span>
+	<main>
+		<div class="portada">
+			<img class="crop" src="./res/Portada.jpg"/>
+			<h1>A.Studio</h1>
+			<h2>Soluciones Audiovisuales a sus necesidades</h2>
 		</div>
-		<p><br><br><hr></p>
+		<hr>
+		<div id="servicios">
+			<h2>SERVICIOS</h2>
+			<span><h3>Edicion</h3>Descripcion del servicio. Descripcion del servicio. Descripcion del servicio. Descripcion del servicio. Descripcion del servicio.</span>
+			<span><h3>Post-producción</h3>Descripcion del servicio. Descripcion del servicio. Descripcion del servicio. Descripcion del servicio. Descripcion del servicio.</span>
+			<span><h3>Efectos especiales</h3>Descripcion del servicio. Descripcion del servicio. Descripcion del servicio. Descripcion del servicio. Descripcion del servicio.</span>
+		</div>
+		<p><hr></p>
 		<div id="trabajos">
 			<h2>TRABAJOS REALIZADOS</h2>
 			<span><h3>2do Trabajo</h3><img src="./res/Trabajos1.jpg" width="100" height="100"/><br> Descripción del segundo trabajo. Descripción del segundo trabajo. Descripción del segundo trabajo.</span>
 			<span><h3>4to Trabajo</h3><img src="./res/Trabajos2.jpg" width="100" height="100"/><br> Descripción del tercer trabajo. Descripción del cuarto trabajo. Descripción del tercer trabajo.</span>
 			<span><h3>3er Trabajo</h3><img src="./res/Trabajos3.jpg" width="100" height="100"/><br> Descripción del cuarto trabajo. Descripción del tercer trabajo. Descripción del cuarto trabajo.</span>
 		</div>
-		<br><br><hr>
-		<div id="galeria">
+		<hr>
+		<div id="galeriaImagenes">
 			<h2>GALERIA DE IMAGENES</h2>
-			<span><img src="./res/imagen1.jpg" width="300" height="250"/></span>
-			<span><img src="./res/imagen2.jpg" width="300" height="250"/></span>
-			<span><img src="./res/imagen3.jpg" width="300" height="250"/></span><br>
-			<span><img src="./res/imagen4.jpg" width="300" height="250"/></span>
-			<span><img src="./res/imagen5.jpg" width="300" height="250"/></span>
-			<span><img src="./res/imagen6.jpg" width="300" height="250"/></span><br>
-			<span><img src="./res/imagen7.jpg" width="300" height="250"/></span>
-			<span><img src="./res/imagen8.jpg" width="300" height="250"/></span>
-			<span><img src="./res/imagen9.jpg" width="300" height="250"/></span><br>
+			<span><img src="./res/imagen1.jpg" width="290" height="250"/></span>
+			<span><img src="./res/imagen2.jpg" width="290" height="250"/></span>
+			<span><img src="./res/imagen3.jpg" width="290" height="250"/></span><br>
+			<span><img src="./res/imagen4.jpg" width="290" height="250"/></span>
+			<span><img src="./res/imagen5.jpg" width="290" height="250"/></span>
+			<span><img src="./res/imagen6.jpg" width="290" height="250"/></span><br>
+			<span><img src="./res/imagen7.jpg" width="290" height="250"/></span>
+			<span><img src="./res/imagen8.jpg" width="290" height="250"/></span>
+			<span><img src="./res/imagen9.jpg" width="290" height="250"/></span><br>
 		</div>
-		<br><br><hr>
+		<hr>
+			<div id="galeriaVideos">
+			<h2>GALERIA DE VIDEOS</h2>
+			<span><iframe width="100%" height="350px" src="https://www.youtube.com/embed/dsFg3aEWiVs?si=XIl5uQqqOaIYYdgG" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></span>
+			<span><iframe width="100%" height="350px" src="https://www.youtube.com/embed/dsFg3aEWiVs?si=XIl5uQqqOaIYYdgG" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></span>
+			<span><iframe width="100%" height="350px" src="https://www.youtube.com/embed/dsFg3aEWiVs?si=XIl5uQqqOaIYYdgG" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></span> <br>
+		</div>
+		<hr>
 		<div id="clientes">
 			<h2>CLIENTES</h2>
 			<span><img src="./res/cliente1.jpg" width="250" height="200"/><br> Descripción del primer cliente. Descripción del primer cliente. Descripción del primer cliente. Descripción del primer cliente. </span>
 			<span><img src="./res/cliente2.jpg" width="250" height="200"/><br> Descripción del segundo cliente. Descripción del segundo cliente. Descripción del segundo cliente. Descripción del segundo cliente.</span>
 			<span><img src="./res/cliente3.jpg" width="250" height="200"/><br> Descripción del tercer cliente. Descripción del tercer cliente. Descripción del tercer cliente. Descripción del tercer cliente. </span>
 		</div>
-		<br><br><hr>
+		<hr>
+		<div id="noticias">
+			<h2>NOTICIAS</h2>
+			<span><h3>A.Studio inaugura su sitio web</h3>La pagina de A.Studio ha iniciado sus operaciones como parte de su propuesta por obtener visibilidad y Dar a conocer sus habilidades y proyecto realizados.</span>
+			<span><h3>Se entrega el 4to trabajo del 2023</h3>En Agosto de 2023 A.Studio ha completa la realización de su 4to proyecto en conjunto con Cinemateca de Bolivia. Un proyecto en conjunto sobre la perdida de los recursos naturales y el efecto económico en los pobladores de las regiones aledañas.</span>
+			<span><h3>Comienza la preproducción de nuestro 5to trabajo</h3>Para Septiembre de 2023 se tiene previsto el inicio de la preproducción del 5to proyecto de la gestión 2023, se realizaran las filmaciones en locacion.</span>
+		</div>
+		<hr>
 		<div id="contacto">
 			<h2>CONTACTO</h2>
-			<span><h4>Telefono de contacto</h4><img src="./res/logwhats.jpg" width="20" height="20"/>700-00000</span>
+			<span><h4>WhatsApp</h4><img src="./res/logwhats.jpg" width="20" height="20"/>700-00000</span>
 			<span><h4>Correo Electrónico</h4><img src="./res/logmail.png" width="20" height="20"/>AjayuStudio@g.com</span>
 			<span><h4>Twitter</h4><img src="./res/X.png" width="20" height="20"/>@AjayuStudio</span>
 		</div>
-		<hr><a href="#top"><img src="./res/flecha.png" width="70" height="70"></a><br>subir</a>
+		<hr><a href="#top"><img src="./res/flecha.png" width="70" height="70"><br>subir</a>
 	</main>
 	<footer><hr>Producciones A. Studios - Todos los derechos reservados.</footer>
+<NOscript src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
 </body>
 </html>
